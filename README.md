@@ -1,5 +1,9 @@
 # roy-web-vuejs
 
+## Project objective
+```
+On my learning path of Vue.JS I took an old web project and I am transforming it to a Vue.JS project
+```
 ## Project setup
 ```
 npm install
