@@ -1,12 +1,7 @@
 <template>
   <Navbar />
-  <Footer />
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> |
-    <router-link to="/retro">Retro</router-link>
-  </div>
   <router-view />
+  <Footer />
 </template>
 
 <script>

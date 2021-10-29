@@ -5,10 +5,10 @@
         <div class="main-menu">
           <ul>
             <li>
-              <a href="about.html">Biografía</a>
+              <router-link :to="{ name: About }">Biografía</router-link>
             </li>
             <li>
-              <a href="retro.html">Retro</a>
+              <router-link :to="{ name: Retro }">Retro</router-link>
             </li>
             <li>
               <!-- Modal button -->

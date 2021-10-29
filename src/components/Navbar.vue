@@ -2,13 +2,10 @@
   <nav>
     <div class="logo">
       <a href=""
-        ><img src="../assets/img/logo_rodrigocostas.png" alt="Rodrigo Costas"
+        ><img src="@/assets/img/logo_rodrigocostas.png" alt="Rodrigo Costas"
       /></a>
     </div>
-    <div
-      @click="isOpen = !isOpen"
-      :class="[isOpen ? 'active' : '', 'menu-icon']"
-    >
+    <div @click="toggleMenu()" :class="[isOpen ? 'active' : '', 'menu-icon']">
       <span></span>
     </div>
   </nav>
@@ -26,6 +23,11 @@ export default {
     return {
       isOpen: false,
     };
+  },
+  methods: {
+    toggleMenu() {
+      this.isOpen = !this.isOpen;
+    },
   },
   emits: ["toggle-menu"],
 };
